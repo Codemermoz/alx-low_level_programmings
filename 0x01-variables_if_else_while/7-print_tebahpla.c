@@ -1,15 +1,19 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 /**
- * main - Entry 
+ * main - Entry Point
  * Return: Always 0
  */
 int main(void)
 {
-	char c;
+	char c = 'z';
 
-	for (c = 'z'; c >= 'a'; c--)
+	while (c >= 'a')
+	{
 		putchar(c);
-
+		c--;
+	}
 	putchar('\n');
 	return (0);
 }
